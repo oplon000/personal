@@ -1,0 +1,33 @@
+.simply-countdown {
+    overflow: hidden;
+    display: flex; /* Ganti display menjadi flex untuk alignment */
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    font-family: 'Arial', sans-serif;
+    height: 100%; /* Tambahkan untuk memastikan elemen penuh di tengah */
+}
+
+.simply-countdown > .simply-section {
+    width: 60px; /* Perbesar ukuran untuk lebih jelas */
+    height: 60px;
+    padding: 15px; /* Kurangi padding agar lebih rapi */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px; /* Kurangi margin antar elemen */
+    background: #3C552D;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 50%; /* Tetap bulat */
+}
+
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+    display: block;
+    text-align: center;
+    color: #fff; /* Teks putih untuk kontras dengan background */
+    font-size: 1rem; /* Sesuaikan ukuran teks */
+}
+
+.simply-countdown > .simply-section .simply-word {
+    font-size: 0.8rem; /* Lebih kecil dari jumlah waktu */
+}

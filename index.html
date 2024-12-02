@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>undangan digital</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap" rel="stylesheet">
+        
+        <!-- bootstraps -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        
+        <!-- simplyCountdown -->
+        <link rel="stylesheet" href="countdwon/simplyCountdown.theme.default.css"/>
+        <script src="countdwon/simplyCountdown.min.js"></script>
+    </head>
+    <body>
+        <section id="hero"
+        class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+            <main>
+                <h4>kepada Bapak/Ibu/Saudara/I</h4>
+                <h1>Fredickson & Ellie</h1>
+                <p>akan melangsungkan resepsi dalam: </p>
+                <div class="simply-countdown"></div>
+                <a href="#home" class="btn btn-lg" onclick="enableScrool()">lihat undangan</a>
+            </main>
+        </section>
+        <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+            <div class="container">
+            <a class="navbar-brand" href="#">Fredickson & Ellie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Fredickson & Ellie</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link"  href="#home">Home</a>
+                        <a class="nav-link" href="#info">Info</a>
+                        <a class="nav-link" href="#galery">Galery</a>
+                        <a class="nav-link" href="#RSVP">RSVP</a>
+                        <a class="nav-link" href="#gift">Gift</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <section id="home" class="home py-5">
+            <div class="container">
+              <!-- Header Section -->
+              <div class="row justify-content-center mb-5">
+                <div class="col-md-8 text-center">
+                  <h2 class="fw-bold text-uppercase mb-3">Acara Pernikahan</h2>
+                  <h3 class="text-muted mb-4">Diselenggarakan pada tanggal 1 Desember 2023</h3>
+                  <p class="text-muted">
+                    Oleh karena itu, dengan segala hormat, kami bermaksud mengundang 
+                    Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan kami.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- Couple Section -->
+              <div class="row couple align-items-center text-center">
+                <div class="col-lg-6 mb-4">
+                  <div class="d-flex flex-column align-items-center">
+                    <img src="img/profile2.png" alt="Fredickson" class="img-fluid rounded-circle shadow mb-3">
+                    <h3 class="fw-bold text-primary">Fredickson</h3>
+                    <p class="text-muted text-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis labore itaque quam et, non totam.
+                    </p>
+                    <p class="text-muted">
+                      Putra dari Bapak Lorem <br> dan <br> Ibu Ipsum
+                    </p>
+                  </div>
+                </div>
+          
+                <div class="col-lg-6 mb-4">
+                  <div class="d-flex flex-column align-items-center">
+                    <img src="img/profile1.png" alt="Ellie" class="img-fluid rounded-circle shadow mb-3">
+                    <h3 class="fw-bold text-primary">Ellie</h3>
+                    <p class="text-muted text-center">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore eos sit placeat voluptate similique esse?
+                    </p>
+                    <p class="text-muted">
+                      Putri dari Bapak Itsum <br> dan <br> Ibu Lorem
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <section id="info" class="info py-5">
+            <div class="container">
+              <!-- Header Section -->
+              <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                  <h2 class="fw-bold text-uppercase mb-3">Informasi Acara</h2>
+                  <p class="alamat text-muted mb-4">
+                    Alamat: Paradise Falls <br> Air terjun Angel, 8011, Bolívar, Venezuela
+                  </p>
+                  <a href="https://maps.app.goo.gl/59YvVFKQx3qcrkNU7" target="_blank" class="btn btn-primary btn-sm mb-3 shadow">
+                    Klik untuk membuka lokasi
+                  </a>
+                  <p class="description text-muted">
+                    Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun jika tidak 
+                    ada tanda-tanda acara, bisa jadi Anda salah jadwal atau salah tempat.
+                  </p>
+                </div>
+              </div>
+          
+              <!-- Card Section -->
+              <div class="row justify-content-center mt-4">
+                <div class="col-md-5 col-10">
+                  <div class="card text-center shadow">
+                    <div class="card-header bg-custom text-white">
+                      Resepsi
+                    </div>
+                    <div class="card-body">
+                      <div class="row justify-content-center">
+                        <div class="col-md-6">
+                          <i class="bi bi-clock d-block fs-3 text-primary"></i>
+                          <span class="text-muted">08.00 - 10.00</span>
+                        </div>
+                        <div class="col-md-6">
+                          <i class="bi bi-calendar3-week d-block fs-3 text-primary"></i>
+                          <span class="text-muted">Jumat, 1 Desember 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer bg-light">
+                      Besar harapan kami agar para undangan dapat hadir pada acara pernikahan kami.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <section id="galery" class="gallery py-5">
+            <div class="container">
+              <!-- Header Section -->
+              <div class="row justify-content-center mb-4">
+                <div class="col-md-10 text-center">
+                  <h2 class="fw-bold text-uppercase mb-3">Gallery</h2>
+                  <p class="text-muted">Temukan inspirasi dalam koleksi visual kami yang memikat.</p>
+                </div>
+              </div>
+          
+              <!-- Carousel Section -->
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+          
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/profile1.png" class="d-block mx-auto carousel-image rounded shadow" alt="Slide 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/profile2.png" class="d-block mx-auto carousel-image rounded shadow" alt="Slide 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/profile2.png" class="d-block mx-auto carousel-image rounded shadow" alt="Slide 3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/profile1.png" class="d-block mx-auto carousel-image rounded shadow" alt="Slide 4">
+                  </div>
+                </div>
+          
+                <!-- Navigation Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+        </section>
+
+        <section id="RSVP" class="RSVP py-5">
+            <div class="container">
+              <!-- Header Section -->
+              <div class="row justify-content-center mb-5">
+                <div class="col-md-8 col-10 text-center">
+                  <h2 class="fw-bold text-uppercase mb-3">Konfirmasi Kehadiran</h2>
+                  <p class="text-muted">Isi form di bawah untuk melakukan konfirmasi kehadiran</p>
+                </div>
+              </div>
+          
+              <!-- RSVP Form -->
+              <form 
+                class="row row-cols-md-auto g-3 align-items-center justify-content-center" 
+                method="POST" 
+                action="https://script.google.com/macros/s/AKfycbxq5qDdhap5C33zaSEagTEcEgPFppXqaBjIVauRNqJmwqc68CvgWHF3t9csAfniVsr2bA/exec" 
+                id="my-form">
+                
+                <div class="col-md-4">
+                  <div class="mb-3">
+                    <label for="nama" class="form-label fw-bold">Nama</label>
+                    <input type="text" class="form-control shadow-sm" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                  </div>
+                </div>
+          
+                <div class="col-md-4">
+                  <div class="mb-3">
+                    <label for="jumlah" class="form-label fw-bold">Jumlah</label>
+                    <input type="number" class="form-control shadow-sm" id="jumlah" name="jumlah" min="1" max="5" value="1" required>
+                  </div>
+                </div>
+          
+                <div class="col-md-4">
+                  <div class="mb-3">
+                    <label for="kehadiran" class="form-label fw-bold">Konfirmasi</label>
+                    <select class="form-control shadow-sm" id="kehadiran" name="kehadiran" required>
+                      <option value="hadir">Akan hadir</option>
+                      <option value="tidak hadir">Tidak akan hadir</option>
+                    </select>
+                  </div>
+                </div>
+          
+                <div class="col-12 text-center" style="margin-top: 30px;">
+                  <button class="btn btn-primary px-5 py-2 shadow">Kirim</button>
+                </div>
+              </form>
+            </div>
+        </section>
+          <footer class="footer py-4">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                  <p class="mb-2 text-muted">
+                    &copy; 2024 <strong>Fredickson & Ellie Wedding</strong>. All rights reserved.
+                  </p>
+                  <p class="mb-3 text-muted">
+                    Design by <a href="https://instagram.com/d.opons_18" class="text-decoration-none">@d.opons_18</a>
+                  </p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item mx-2">
+                      <a href="#" class="text-muted fs-4"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item mx-2">
+                      <a href="#" class="text-muted fs-4"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item mx-2">
+                      <a href="#" class="text-muted fs-4"><i class="bi bi-tiktok"></i></a>
+                    </li>
+                    <li class="list-inline-item mx-2">
+                      <a href="#" class="text-muted fs-4"><i class="bi bi-whatsapp"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+
+     <div id="audio- container">
+        <audio id="song" autoplay loop>
+            <source src="audio/Up OST _Married Life_ [pIano cover]_NbwGn9zJtQI.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="audio-icon-wrapper" style="display: none;">
+            <i><i class="bi bi-disc"></i></i>
+        </div>
+     </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous"></script>
+
+        <script>
+            simplyCountdown('.simply-countdown', {
+            
+                year: 2024, // required
+                month: 2, // required
+                day: 1, // required
+                hours: 10, // Default is 0 [0-23] integer
+                minutes: 0, // Default is 0 [0-59] integer
+                seconds: 0, // Default is 0 [0-59] integer
+                words: { //words displayed into the countdown
+                    days: { singular: 'hari', plural: 'hari' },
+                    hours: { singular: 'jam', plural: 'jam' },
+                    minutes: { singular: 'menit', plural: 'menit' },
+                    seconds: { singular: 'detik', plural: 'detik' }
+                },
+                
+            });
+        </script>
+        
+        <script>
+            const hamburger = document.querySelector('.navbar-toggler');
+            const stickytop = document.querySelector('.sticky-top');
+
+            hamburger.addEventListener('click', function (){
+                stickytop.style.overflow = 'visible';
+            });
+
+            const offcanvas = document.querySelector('.offcanvas');
+            offcanvas.addEventListener('hidden.bs.offcanvas' , function() {
+                stickytop.style.overflow = 'hidden';
+            });
+        </script>
+
+        <script>
+            const rootElement =document.querySelector(":root");
+            const audioIcontWrapper = document.querySelector('audio-icont-wrapper')
+
+            function disableScroll() {
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+                window.onscroll = function () {
+                    window.scrollTo(screenTop, screenLeft);
+                }
+                rootElement.style.scrollBehavior = 'auto';
+            }
+
+            function enableScrool() {
+                window.onscroll = function () {  }
+                rootElement.style.scrollBehavior = 'smooth';
+                
+                playaudio();
+            }
+
+            function playaudio(){
+                const song = document.querySelector('song')
+                song.volume = 0.1
+                audioIcontWrapper.style.display = 'flex'
+                song.play();
+            }
+
+            disableScroll();
+
+        </script>
+
+        <script>
+            window.addEventListener("load", function() {
+                const form = document.getElementById('my-form');
+                form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                    method: 'POST',
+                    body: data,
+                    })
+                    .then(() => {
+                        alert("konfirmasi data kehadiran terkirim!");
+                    })
+                });
+            });
+        </script>
+    
+    </body>
+</html>

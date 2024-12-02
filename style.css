@@ -1,0 +1,462 @@
+:root {
+    --pink: hsl(318, 99%, 51%);
+    --bg: #ffeaef;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0,5);
+
+}
+
+body{
+    font-size: 1.2rem;
+    font-family:'Work Sans', sans-serif ;
+    min-height: 3400px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Pastikan lebar mencakup seluruh elemen */
+    height: 100%; /* Pastikan tinggi mencakup seluruh elemen */
+    background-image: url('img/home.png');
+    background-size: cover; /* Menjaga proporsi gambar */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    z-index: -1; /* Menempatkan di belakang konten */
+}
+/* Media Query untuk Hero Section */
+@media (max-width: 768px) {
+    .hero::before {
+        background-size: contain;
+    }
+}
+.hero{
+    position: relative;
+    min-height: 100vh;
+   
+}
+
+.hero h1{
+    font-family: 'Caveat, cursive';
+    font-size: 4rem;
+
+}
+
+.hero h4{
+    font-size: 1.6rem;
+}
+
+.hero p{
+    font-size: 1.2rem;
+}
+
+.hero a {
+    margin-top: 5%;
+    background-color: white;
+    color: var(--pink);
+    box-shadow: var(--shadow);
+    
+}
+
+.hero a:hover{
+    background-color: var(--pink);
+    color: white;
+}
+
+
+.mynavbar{
+    background-color:rgba(255, 255, 255, 0.4)!important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas{
+    height: 100vh;
+}
+
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+
+    font-family: 'Caveat', cursive;
+    font-size: 3.1rem;
+    font-weight: bold;
+
+
+}
+
+.mynavbar .nav-link{
+    text-transform: uppercase;
+}
+
+.sticky-top{
+    overflow: hidden;
+}
+
+ /* Section Styling */
+ #home {
+    background: #f8f9fa; /* Soft gray background */
+  }
+
+  #home h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+
+  #home h3 {
+    font-size: 1.5rem;
+    color: #6c757d;
+  }
+
+  #home p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6c757d;
+  }
+
+  /* Couple Section */
+  .couple img {
+    width: 150px; /* Larger image */
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #3C552D; /* Border color */
+    padding: 5px;
+  }
+
+  .couple h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  .couple p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #6c757d;
+    max-width: 300px; /* Limit text width for better alignment */
+    margin: 0 auto;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #home h2 {
+      font-size: 2rem;
+    }
+
+    #home h3 {
+      font-size: 1.3rem;
+    }
+
+    .couple img {
+      width: 120px; /* Smaller image for smaller screens */
+      height: 120px;
+    }
+  }
+
+  .bg-custom{
+    background-color: #3C552D;
+  }
+/* Section Styling */
+#info {
+    background: #f8f9fa; /* Background soft gray */
+  }
+
+  #info h2 {
+    color: #333;
+    font-size: 2.5rem;
+  }
+
+  .alamat {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.6;
+  }
+
+  .btn-primary {
+    background-color: #3C552D;
+    border: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-primary:hover {
+    background-color: #3C552D;
+    transform: scale(1.05);
+  }
+
+  /* Card Styling */
+  .card {
+    border: none;
+    border-radius: 8px;
+  }
+
+  .card-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .card-footer {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+
+  .bi {
+    margin-bottom: 8px;
+  }
+
+  .text-primary {
+    color: #3C552D !important;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #info h2 {
+      font-size: 2rem;
+    }
+
+    .description {
+      font-size: 0.85rem;
+    }
+
+    .card-header,
+    .card-footer {
+      font-size: 0.85rem;
+    }
+  }
+
+#gallery {
+    background: #f8f9fa; /* Soft gray background */
+  }
+
+  #gallery h2 {
+    color: #333;
+    font-size: 2.5rem;
+  }
+
+  #gallery p {
+    color: #6c757d;
+    font-size: 1rem;
+  }
+
+  /* Carousel Styling */
+  .carousel {
+    position: relative;
+    max-width: 700px; /* Adjust the carousel size */
+    margin: 0 auto;
+  }
+
+  .carousel-image {
+    height: 400px; /* Limit the height of the images */
+    object-fit: cover; /* Keep aspect ratio and crop */
+  }
+
+  .carousel-indicators button {
+    background-color: #333; /* Custom indicator color */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1); /* Make the navigation icons white */
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .carousel-image {
+      height: 200px; /* Adjust height for smaller screens */
+    }
+
+    #gallery h2 {
+      font-size: 2rem;
+    }
+
+    #gallery p {
+      font-size: 0.9rem;
+    }
+  }
+
+/* Section Styling */
+#RSVP {
+    background: #f8f9fa; /* Soft gray background */
+  }
+
+  #RSVP h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+
+  #RSVP p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6c757d;
+  }
+
+  /* Form Styling */
+  #my-form .form-label {
+    color: #333;
+  }
+
+  #my-form .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  #my-form .form-control:focus {
+    border-color: #3C552D;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  #my-form .btn-primary {
+    background-color: #3C552D;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+
+  #my-form .btn-primary:hover {
+    background-color: #3C552D;
+  }
+
+  /* Shadow for input and button */
+  #my-form .shadow-sm {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #RSVP h2 {
+      font-size: 2rem;
+    }
+
+    #RSVP p {
+      font-size: 0.9rem;
+    }
+
+    #my-form .form-control {
+      font-size: 0.9rem;
+    }
+
+    #my-form .btn-primary {
+      padding: 10px 20px;
+    }
+  }
+/* Footer Styling */
+.footer {
+    background: #f8f9fa; /* Light gray background */
+    border-top: 1px solid #dee2e6; /* Subtle border at the top */
+    border-bottom: -3px;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .footer a {
+    color: #6c757d;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #3C552D; /* Change to primary color on hover */
+  }
+  
+  .footer .list-inline-item a {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    background: #e9ecef; /* Light background for icons */
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer .list-inline-item a:hover {
+    background: #3C552D;
+    color: #fff;
+    transform: scale(1.1); /* Slight scaling on hover */
+  }
+  
+  .footer .bi {
+    font-size: 1.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer p {
+      font-size: 0.8rem;
+    }
+  
+    .footer .bi {
+      font-size: 1.3rem;
+    }
+  }
+
+.audio-icon-wrapper{
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right:2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+
+}
+
+@keyframes rotating{
+    form{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* media query */
+/* laptop */
+@media(max-width: 992px){
+    html {
+        font-size: 75%;
+    }
+    .simply-countdown>.simply-section{
+        padding:  30px;
+    }
+}
+/* tablet */
+@media (max-width: 768px){
+
+    html{
+        font-size: 65;
+    }
+}
+.simply-countdown>.simply-section{
+    padding: 20px;
+    margin: 10;
+.mynavbar .nav-link{
+    font-size: 2rem;
+    text-align: center;
+}
+}
+/* mobile phone */
+@media (max-width: 576px){
+    html{
+        font-size: 60;
+    }
+    .simply-countdown>.simply-section{
+        padding: 20px;
+        margin: 5px;
+    }
+
+}
